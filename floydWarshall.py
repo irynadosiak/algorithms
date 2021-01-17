@@ -1,4 +1,4 @@
-def floyd_warshall(graph, N):
+def floydWarshall(graph, N):
     distance = list(map(lambda i: list(map(lambda j: j, i)), graph))
     for k in range(N):
         for i in range(N):
@@ -8,4 +8,4 @@ def floyd_warshall(graph, N):
 
 
 matrix = [[0, 8, 2], [8, 0, 1], [2, 1, 0]]
-print(floyd_warshall(matrix, 3))
+print(floydWarshall(matrix, 3))
